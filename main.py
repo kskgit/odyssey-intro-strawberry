@@ -1,8 +1,6 @@
+from stawberry.fastapi import GraphQLRouter
 from fastapi import FastAPI
 
 app = FastAPI()
-
-
-@app.get("/")
-async def hello_world():
-    return {"message": "Hello World"}
+graphql_router = GraphQLRouter(..., path="/", graphql_ide="appllo-sandbox")
+app.include_router(graphql_router)
