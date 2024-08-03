@@ -1,5 +1,4 @@
 import strawberry
-from strawberry.types.base import StrawberryType
 
 
 def get_hello():

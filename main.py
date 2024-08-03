@@ -1,4 +1,3 @@
-from strawberry import schema
 from strawberry.fastapi import GraphQLRouter
 from fastapi import FastAPI
 from api.schema import schema
