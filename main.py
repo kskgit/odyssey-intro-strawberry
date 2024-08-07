@@ -1,7 +1,6 @@
 from contextlib import asynccontextmanager
 from strawberry.fastapi import GraphQLRouter
-from fastapi import FastAPI
-from strawberry.http.typevars import Request
+from fastapi import FastAPI, Request
 from api.schema import schema
 from mock_spotify_rest_api_client.client import Client
 
@@ -10,7 +9,7 @@ from mock_spotify_rest_api_client.client import Client
 async def lifespan(app):
     async with Client(
         base_url="https://spotify-demo-api-fe224840a08c.herokuapp.com/v1"
-    ) as spotify_client:
+    ) as client:
         yield {"spotify_client": client}
 
 
