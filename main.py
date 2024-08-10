@@ -1,7 +1,7 @@
 from contextlib import asynccontextmanager
 from strawberry.fastapi import GraphQLRouter
-from fastapi import FastAPI
-from strawberry.http.typevars import Request
+from fastapi import FastAPI, Request
+
 from api.schema import schema
 from mock_spotify_rest_api_client.client import Client
 
