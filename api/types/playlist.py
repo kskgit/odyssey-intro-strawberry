@@ -17,7 +17,6 @@ class Playlist:
         description="Describes the playlist, what to expect and entices the user to listen."
     )
     _tracks: strawberry.Private[list[Track] | None] = None
-    _test: strawberry.Private[str] = None
 
     @strawberry.field(description="The tracks in the playlist.")
     def tracks(self, info: strawberry.Info) -> list[Track] | None:
