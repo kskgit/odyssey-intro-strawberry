@@ -1,5 +1,5 @@
 import strawberry
-from api.types.AddItemsToPlaylistPayload import AddItemsToPlaylistPayload
+from api.types.add_items_to_playlist_payload import AddItemsToPlaylistPayload
 from api.types.playlist import Playlist
 
 
