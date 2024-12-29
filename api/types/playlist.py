@@ -44,3 +44,7 @@ class Playlist:
             ]
 
         return self._tracks
+
+    @strawberry.field(description="The type name of this object")
+    def __typename(self) -> str:
+        return "Playlist"

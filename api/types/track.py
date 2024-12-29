@@ -13,3 +13,7 @@ class Track:
     uri: str = strawberry.field(
         description="The URI for the track, useally a Spotify link."
     )
+
+    @strawberry.field(description="The type name of this object")
+    def __typename(self) -> str:
+        return "Track"
