@@ -4,6 +4,9 @@ description = ""
 name = "api"
 requires-python = ">=3.7"
 version = "0.1.0"
+dependencies = [
+    "alembic>=1.14.0",
+]
 
 [tool.black]
 line-length = 88
